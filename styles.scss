@@ -1,0 +1,26 @@
+$colorbg : #7BE47B;
+$borderradius: 20px;
+$widthcontainercenter :  50%;
+$heightcontainercenter : 50%;
+$bgcontainer : #7AADFA;
+body{
+    background-color: $colorbg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containercenter{
+    
+    border: solid black;
+    background-color: $bgcontainer;
+    width: $widthcontainercenter;
+    height: $heightcontainercenter;
+    border-radius: $borderradius;
+    
+}
+.formCorreo{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
