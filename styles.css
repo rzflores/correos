@@ -20,8 +20,45 @@ body {
 }
 
 .formCorreo {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.containerlist {
+  padding-left: 40%;
+  overflow-y: scroll;
+  width: auto;
+  height: 40%;
+}
+
+.containerlist::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.containerlist::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.containerlist::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .containercenter {
+    border: black;
+    background-color: #7AADFA;
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+  }
+  .email {
+    font-size: 80%;
+  }
+  .containerlist {
+    padding-left: 3%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -26,7 +26,7 @@ function ImprimirListaCorreos(){
     listacorreos.innerHTML  = "";
     reference.on('child_added',(snapshot) =>{
         let dataCorreos = snapshot.val();       
-        listacorreos.innerHTML  += `<li>${dataCorreos.correo}</li>`        
+        listacorreos.innerHTML  += `<li class="email">${dataCorreos.correo}</li>`        
       });
     
 }

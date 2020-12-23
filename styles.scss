@@ -3,6 +3,7 @@ $borderradius: 20px;
 $widthcontainercenter :  50%;
 $heightcontainercenter : 50%;
 $bgcontainer : #7AADFA;
+$containerlistpleft:40%;
 body{
     background-color: $colorbg;
     display: flex;
@@ -20,7 +21,49 @@ body{
     
 }
 .formCorreo{
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
 }
+.containerlist{  
+    padding-left: $containerlistpleft;
+    overflow-y: scroll;
+    width: auto;
+    height: 40%;
+}
+.containerlist::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+.containerlist::-webkit-scrollbar:vertical {
+    width:10px;
+}
+.containerlist::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+@media  (max-width: 600px) {
+    $widthcontainercenter :  70%;
+    $heightcontainercenter : 70%;
+    $containerlistpleft : 3%;
+    .containercenter{
+    
+        border:  black;
+        background-color: $bgcontainer;
+        width: $widthcontainercenter;
+        height: $heightcontainercenter;
+        border-radius: $borderradius;
+        
+    }
+    .email{
+        font-size:80%;        
+    }
+    .containerlist{
+        padding-left: $containerlistpleft;
+    }
+}
+
+  
+
+  
